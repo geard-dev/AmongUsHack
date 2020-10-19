@@ -7,10 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmongUsHack", "AmongUsHack\
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AmongUsHack ProductionBuild|Any CPU = AmongUsHack ProductionBuild|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD6C1A76-924D-4AE0-AB6D-B946975AFDEE}.AmongUsHack ProductionBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6C1A76-924D-4AE0-AB6D-B946975AFDEE}.AmongUsHack ProductionBuild|Any CPU.Build.0 = Debug|Any CPU
 		{AD6C1A76-924D-4AE0-AB6D-B946975AFDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AD6C1A76-924D-4AE0-AB6D-B946975AFDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD6C1A76-924D-4AE0-AB6D-B946975AFDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
