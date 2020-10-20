@@ -35,5 +35,17 @@ namespace AmongUsHack
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
             memory.WriteMemory("GameAssembly.dll+014669B0,5C,14,14","float", setSpeedTextBox.Text);
         }
+
+        private void setVisionCrewmateButton_Click(object sender, EventArgs e)
+        {
+            memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
+            memory.WriteMemory("GameAssembly.dll+01468910,5C,4,18", "float", setVisionTextBox.Text);
+        }
+
+        private void setVisionImpostorButton_Click(object sender, EventArgs e)
+        {
+            memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
+            memory.WriteMemory("GameAssembly.dll+01468910,5C,4,1C", "float", setVisionTextBox.Text);
+        }
     }
 }
