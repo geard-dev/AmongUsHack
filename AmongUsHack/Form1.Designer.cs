@@ -37,6 +37,9 @@
             this.setVisionImpostorButton = new System.Windows.Forms.Button();
             this.creditLabel = new System.Windows.Forms.Label();
             this.creditLabel2 = new System.Windows.Forms.Label();
+            this.killTimeoutLabel = new System.Windows.Forms.Label();
+            this.setKillTimeoutTextBox = new System.Windows.Forms.TextBox();
+            this.setKillTimeoutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // setSpeedButton
@@ -133,12 +136,46 @@
             this.creditLabel2.TabIndex = 9;
             this.creditLabel2.Text = "Educational/Demonstrational Purposes Only";
             // 
+            // killTimeoutLabel
+            // 
+            this.killTimeoutLabel.AutoSize = true;
+            this.killTimeoutLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
+            this.killTimeoutLabel.Location = new System.Drawing.Point(439, 22);
+            this.killTimeoutLabel.Name = "killTimeoutLabel";
+            this.killTimeoutLabel.Size = new System.Drawing.Size(124, 25);
+            this.killTimeoutLabel.TabIndex = 12;
+            this.killTimeoutLabel.Text = "Kill Timeout";
+            // 
+            // setKillTimeoutTextBox
+            // 
+            this.setKillTimeoutTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(209)))));
+            this.setKillTimeoutTextBox.Location = new System.Drawing.Point(435, 50);
+            this.setKillTimeoutTextBox.Name = "setKillTimeoutTextBox";
+            this.setKillTimeoutTextBox.Size = new System.Drawing.Size(260, 31);
+            this.setKillTimeoutTextBox.TabIndex = 11;
+            this.setKillTimeoutTextBox.Text = "5.0";
+            // 
+            // setKillTimeoutButton
+            // 
+            this.setKillTimeoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.setKillTimeoutButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.setKillTimeoutButton.Location = new System.Drawing.Point(726, 46);
+            this.setKillTimeoutButton.Name = "setKillTimeoutButton";
+            this.setKillTimeoutButton.Size = new System.Drawing.Size(84, 38);
+            this.setKillTimeoutButton.TabIndex = 10;
+            this.setKillTimeoutButton.Text = "Set";
+            this.setKillTimeoutButton.UseVisualStyleBackColor = false;
+            this.setKillTimeoutButton.Click += new System.EventHandler(this.setKillTimeoutButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(76)))), ((int)(((byte)(90)))));
             this.ClientSize = new System.Drawing.Size(837, 261);
+            this.Controls.Add(this.killTimeoutLabel);
+            this.Controls.Add(this.setKillTimeoutTextBox);
+            this.Controls.Add(this.setKillTimeoutButton);
             this.Controls.Add(this.creditLabel2);
             this.Controls.Add(this.creditLabel);
             this.Controls.Add(this.setVisionImpostorButton);
@@ -165,6 +202,9 @@
         private System.Windows.Forms.Button setVisionImpostorButton;
         private System.Windows.Forms.Label creditLabel;
         private System.Windows.Forms.Label creditLabel2;
+        private System.Windows.Forms.Label killTimeoutLabel;
+        private System.Windows.Forms.TextBox setKillTimeoutTextBox;
+        private System.Windows.Forms.Button setKillTimeoutButton;
     }
 }
 
