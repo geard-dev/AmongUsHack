@@ -40,6 +40,10 @@
             this.killTimeoutLabel = new System.Windows.Forms.Label();
             this.setKillTimeoutTextBox = new System.Windows.Forms.TextBox();
             this.setKillTimeoutButton = new System.Windows.Forms.Button();
+            this.setThemeTo1Button = new System.Windows.Forms.Button();
+            this.setThemeTo2Button = new System.Windows.Forms.Button();
+            this.setThemeTo3Button = new System.Windows.Forms.Button();
+            this.setThemeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // setSpeedButton
@@ -120,7 +124,7 @@
             // 
             this.creditLabel.AutoSize = true;
             this.creditLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel.Location = new System.Drawing.Point(3, 227);
+            this.creditLabel.Location = new System.Drawing.Point(12, 289);
             this.creditLabel.Name = "creditLabel";
             this.creditLabel.Size = new System.Drawing.Size(358, 25);
             this.creditLabel.TabIndex = 8;
@@ -130,7 +134,7 @@
             // 
             this.creditLabel2.AutoSize = true;
             this.creditLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel2.Location = new System.Drawing.Point(400, 227);
+            this.creditLabel2.Location = new System.Drawing.Point(439, 289);
             this.creditLabel2.Name = "creditLabel2";
             this.creditLabel2.Size = new System.Drawing.Size(434, 25);
             this.creditLabel2.TabIndex = 9;
@@ -167,12 +171,59 @@
             this.setKillTimeoutButton.UseVisualStyleBackColor = false;
             this.setKillTimeoutButton.Click += new System.EventHandler(this.setKillTimeoutButton_Click);
             // 
+            // setThemeTo1Button
+            // 
+            this.setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.setThemeTo1Button.Location = new System.Drawing.Point(40, 221);
+            this.setThemeTo1Button.Name = "setThemeTo1Button";
+            this.setThemeTo1Button.Size = new System.Drawing.Size(168, 38);
+            this.setThemeTo1Button.TabIndex = 13;
+            this.setThemeTo1Button.Text = "Theme 1";
+            this.setThemeTo1Button.UseVisualStyleBackColor = false;
+            this.setThemeTo1Button.Click += new System.EventHandler(this.setThemeTo1Button_Click);
+            // 
+            // setThemeTo2Button
+            // 
+            this.setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.setThemeTo2Button.Location = new System.Drawing.Point(214, 221);
+            this.setThemeTo2Button.Name = "setThemeTo2Button";
+            this.setThemeTo2Button.Size = new System.Drawing.Size(168, 38);
+            this.setThemeTo2Button.TabIndex = 14;
+            this.setThemeTo2Button.Text = "Theme 2";
+            this.setThemeTo2Button.UseVisualStyleBackColor = false;
+            this.setThemeTo2Button.Click += new System.EventHandler(this.setThemeTo2Button_Click);
+            // 
+            // setThemeTo3Button
+            // 
+            this.setThemeTo3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.setThemeTo3Button.Location = new System.Drawing.Point(388, 221);
+            this.setThemeTo3Button.Name = "setThemeTo3Button";
+            this.setThemeTo3Button.Size = new System.Drawing.Size(168, 38);
+            this.setThemeTo3Button.TabIndex = 16;
+            this.setThemeTo3Button.Text = "Theme 3";
+            this.setThemeTo3Button.UseVisualStyleBackColor = false;
+            this.setThemeTo3Button.Click += new System.EventHandler(this.setThemeTo3Button_Click);
+            // 
+            // setThemeLabel
+            // 
+            this.setThemeLabel.AutoSize = true;
+            this.setThemeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
+            this.setThemeLabel.Location = new System.Drawing.Point(44, 193);
+            this.setThemeLabel.Name = "setThemeLabel";
+            this.setThemeLabel.Size = new System.Drawing.Size(135, 25);
+            this.setThemeLabel.TabIndex = 17;
+            this.setThemeLabel.Text = "Color Theme";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(76)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(837, 261);
+            this.ClientSize = new System.Drawing.Size(878, 323);
+            this.Controls.Add(this.setThemeLabel);
+            this.Controls.Add(this.setThemeTo3Button);
+            this.Controls.Add(this.setThemeTo2Button);
+            this.Controls.Add(this.setThemeTo1Button);
             this.Controls.Add(this.killTimeoutLabel);
             this.Controls.Add(this.setKillTimeoutTextBox);
             this.Controls.Add(this.setKillTimeoutButton);
@@ -187,6 +238,7 @@
             this.Controls.Add(this.setSpeedButton);
             this.Name = "Form1";
             this.Text = "Among Us Hacks by geard-dev";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +257,10 @@
         private System.Windows.Forms.Label killTimeoutLabel;
         private System.Windows.Forms.TextBox setKillTimeoutTextBox;
         private System.Windows.Forms.Button setKillTimeoutButton;
+        private System.Windows.Forms.Button setThemeTo1Button;
+        private System.Windows.Forms.Button setThemeTo2Button;
+        private System.Windows.Forms.Button setThemeTo3Button;
+        private System.Windows.Forms.Label setThemeLabel;
     }
 }
 
