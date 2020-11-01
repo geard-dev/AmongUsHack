@@ -34,7 +34,6 @@
             this.visionLabel = new System.Windows.Forms.Label();
             this.setVisionTextBox = new System.Windows.Forms.TextBox();
             this.setVisionCrewmateButton = new System.Windows.Forms.Button();
-            this.setVisionImpostorButton = new System.Windows.Forms.Button();
             this.creditLabel = new System.Windows.Forms.Label();
             this.creditLabel2 = new System.Windows.Forms.Label();
             this.killTimeoutLabel = new System.Windows.Forms.Label();
@@ -103,28 +102,17 @@
             this.setVisionCrewmateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
             this.setVisionCrewmateButton.Location = new System.Drawing.Point(331, 126);
             this.setVisionCrewmateButton.Name = "setVisionCrewmateButton";
-            this.setVisionCrewmateButton.Size = new System.Drawing.Size(198, 38);
+            this.setVisionCrewmateButton.Size = new System.Drawing.Size(84, 38);
             this.setVisionCrewmateButton.TabIndex = 4;
-            this.setVisionCrewmateButton.Text = "Set for Crewmate";
+            this.setVisionCrewmateButton.Text = "Set";
             this.setVisionCrewmateButton.UseVisualStyleBackColor = false;
             this.setVisionCrewmateButton.Click += new System.EventHandler(this.setVisionCrewmateButton_Click);
-            // 
-            // setVisionImpostorButton
-            // 
-            this.setVisionImpostorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
-            this.setVisionImpostorButton.Location = new System.Drawing.Point(535, 126);
-            this.setVisionImpostorButton.Name = "setVisionImpostorButton";
-            this.setVisionImpostorButton.Size = new System.Drawing.Size(205, 38);
-            this.setVisionImpostorButton.TabIndex = 7;
-            this.setVisionImpostorButton.Text = "Set for Impostor";
-            this.setVisionImpostorButton.UseVisualStyleBackColor = false;
-            this.setVisionImpostorButton.Click += new System.EventHandler(this.setVisionImpostorButton_Click);
             // 
             // creditLabel
             // 
             this.creditLabel.AutoSize = true;
             this.creditLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel.Location = new System.Drawing.Point(12, 289);
+            this.creditLabel.Location = new System.Drawing.Point(12, 210);
             this.creditLabel.Name = "creditLabel";
             this.creditLabel.Size = new System.Drawing.Size(358, 25);
             this.creditLabel.TabIndex = 8;
@@ -134,7 +122,7 @@
             // 
             this.creditLabel2.AutoSize = true;
             this.creditLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel2.Location = new System.Drawing.Point(439, 289);
+            this.creditLabel2.Location = new System.Drawing.Point(519, 210);
             this.creditLabel2.Name = "creditLabel2";
             this.creditLabel2.Size = new System.Drawing.Size(434, 25);
             this.creditLabel2.TabIndex = 9;
@@ -174,7 +162,7 @@
             // setThemeTo1Button
             // 
             this.setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
-            this.setThemeTo1Button.Location = new System.Drawing.Point(40, 221);
+            this.setThemeTo1Button.Location = new System.Drawing.Point(435, 126);
             this.setThemeTo1Button.Name = "setThemeTo1Button";
             this.setThemeTo1Button.Size = new System.Drawing.Size(168, 38);
             this.setThemeTo1Button.TabIndex = 13;
@@ -185,7 +173,7 @@
             // setThemeTo2Button
             // 
             this.setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
-            this.setThemeTo2Button.Location = new System.Drawing.Point(214, 221);
+            this.setThemeTo2Button.Location = new System.Drawing.Point(609, 126);
             this.setThemeTo2Button.Name = "setThemeTo2Button";
             this.setThemeTo2Button.Size = new System.Drawing.Size(168, 38);
             this.setThemeTo2Button.TabIndex = 14;
@@ -196,7 +184,7 @@
             // setThemeTo3Button
             // 
             this.setThemeTo3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
-            this.setThemeTo3Button.Location = new System.Drawing.Point(388, 221);
+            this.setThemeTo3Button.Location = new System.Drawing.Point(783, 126);
             this.setThemeTo3Button.Name = "setThemeTo3Button";
             this.setThemeTo3Button.Size = new System.Drawing.Size(168, 38);
             this.setThemeTo3Button.TabIndex = 16;
@@ -208,7 +196,7 @@
             // 
             this.setThemeLabel.AutoSize = true;
             this.setThemeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.setThemeLabel.Location = new System.Drawing.Point(44, 193);
+            this.setThemeLabel.Location = new System.Drawing.Point(439, 98);
             this.setThemeLabel.Name = "setThemeLabel";
             this.setThemeLabel.Size = new System.Drawing.Size(135, 25);
             this.setThemeLabel.TabIndex = 17;
@@ -219,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(76)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(878, 323);
+            this.ClientSize = new System.Drawing.Size(965, 244);
             this.Controls.Add(this.setThemeLabel);
             this.Controls.Add(this.setThemeTo3Button);
             this.Controls.Add(this.setThemeTo2Button);
@@ -229,7 +217,6 @@
             this.Controls.Add(this.setKillTimeoutButton);
             this.Controls.Add(this.creditLabel2);
             this.Controls.Add(this.creditLabel);
-            this.Controls.Add(this.setVisionImpostorButton);
             this.Controls.Add(this.visionLabel);
             this.Controls.Add(this.setVisionTextBox);
             this.Controls.Add(this.setVisionCrewmateButton);
@@ -251,7 +238,6 @@
         private System.Windows.Forms.Label visionLabel;
         private System.Windows.Forms.TextBox setVisionTextBox;
         private System.Windows.Forms.Button setVisionCrewmateButton;
-        private System.Windows.Forms.Button setVisionImpostorButton;
         private System.Windows.Forms.Label creditLabel;
         private System.Windows.Forms.Label creditLabel2;
         private System.Windows.Forms.Label killTimeoutLabel;

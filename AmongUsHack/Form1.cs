@@ -30,7 +30,6 @@ namespace AmongUsHack
 
             setSpeedButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setVisionCrewmateButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
-            setVisionImpostorButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setKillTimeoutButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
@@ -69,7 +68,6 @@ namespace AmongUsHack
 
             setSpeedButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setVisionCrewmateButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
-            setVisionImpostorButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setKillTimeoutButton.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
             setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(225, 240, 196);
@@ -108,7 +106,6 @@ namespace AmongUsHack
 
             setSpeedButton.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
             setVisionCrewmateButton.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
-            setVisionImpostorButton.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
             setKillTimeoutButton.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
             setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
             setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(225, 238, 147);
@@ -147,7 +144,6 @@ namespace AmongUsHack
 
             setSpeedButton.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
             setVisionCrewmateButton.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
-            setVisionImpostorButton.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
             setKillTimeoutButton.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
             setThemeTo1Button.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
             setThemeTo2Button.BackColor = System.Drawing.Color.FromArgb(96, 211, 148);
@@ -192,11 +188,6 @@ namespace AmongUsHack
         {
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
             memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,18", "float", setVisionTextBox.Text);
-        }
-
-        private void setVisionImpostorButton_Click(object sender, EventArgs e)
-        {
-            memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
             memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,1C", "float", setVisionTextBox.Text);
         }
 
