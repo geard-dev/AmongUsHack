@@ -180,21 +180,24 @@ namespace AmongUsHack
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Speed:
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
-            memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,14", "float", setSpeedTextBox.Text);
+            memory.WriteMemory("GameAssembly.dll+014B20F0,5C,14,14", "float", setSpeedTextBox.Text);
         }
 
         private void setVisionCrewmateButton_Click(object sender, EventArgs e)
         {
+            // Vision:
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
-            memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,18", "float", setVisionTextBox.Text);
-            memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,1C", "float", setVisionTextBox.Text);
+            memory.WriteMemory("GameAssembly.dll+014B20F0,5C,14,18", "float", setVisionTextBox.Text);
+            memory.WriteMemory("GameAssembly.dll+014B20F0,5C,14,1C", "float", setVisionTextBox.Text);
         }
 
         private void setKillTimeoutButton_Click(object sender, EventArgs e)
         {
+            // Kill Cooldown:
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
-            memory.WriteMemory("GameAssembly.dll+0144A9D0,5C,14,20", "float", setKillTimeoutTextBox.Text);
+            memory.WriteMemory("GameAssembly.dll+014B20F0,5C,14,20", "float", setKillTimeoutTextBox.Text);
         }
     }
 }
