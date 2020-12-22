@@ -199,5 +199,20 @@ namespace AmongUsHack
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
             memory.WriteMemory("GameAssembly.dll+014B20F0,5C,14,20", "float", setKillTimeoutTextBox.Text);
         }
+
+        private void forceCrewmateBtn_Click(object sender, EventArgs e)
+        {
+            // Force Crewmate:
+        }
+
+        private void forceImpostorBtn_Click(object sender, EventArgs e)
+        {
+            // Force Impostor:
+        }
+
+        private void forceGhostBtn_Click(object sender, EventArgs e)
+        {
+            // Force Ghost:
+        }
     }
 }

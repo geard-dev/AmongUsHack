@@ -43,6 +43,10 @@
             this.setThemeTo2Button = new System.Windows.Forms.Button();
             this.setThemeTo3Button = new System.Windows.Forms.Button();
             this.setThemeLabel = new System.Windows.Forms.Label();
+            this.forceRoleLabel = new System.Windows.Forms.Label();
+            this.forceGhostBtn = new System.Windows.Forms.Button();
+            this.forceCrewmateBtn = new System.Windows.Forms.Button();
+            this.forceImpostorBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // setSpeedButton
@@ -112,7 +116,7 @@
             // 
             this.creditLabel.AutoSize = true;
             this.creditLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel.Location = new System.Drawing.Point(12, 210);
+            this.creditLabel.Location = new System.Drawing.Point(12, 287);
             this.creditLabel.Name = "creditLabel";
             this.creditLabel.Size = new System.Drawing.Size(358, 25);
             this.creditLabel.TabIndex = 8;
@@ -122,7 +126,7 @@
             // 
             this.creditLabel2.AutoSize = true;
             this.creditLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
-            this.creditLabel2.Location = new System.Drawing.Point(519, 210);
+            this.creditLabel2.Location = new System.Drawing.Point(522, 287);
             this.creditLabel2.Name = "creditLabel2";
             this.creditLabel2.Size = new System.Drawing.Size(434, 25);
             this.creditLabel2.TabIndex = 9;
@@ -202,12 +206,59 @@
             this.setThemeLabel.TabIndex = 17;
             this.setThemeLabel.Text = "Color Theme";
             // 
+            // forceRoleLabel
+            // 
+            this.forceRoleLabel.AutoSize = true;
+            this.forceRoleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(171)))), ((int)(((byte)(144)))));
+            this.forceRoleLabel.Location = new System.Drawing.Point(44, 181);
+            this.forceRoleLabel.Name = "forceRoleLabel";
+            this.forceRoleLabel.Size = new System.Drawing.Size(425, 25);
+            this.forceRoleLabel.TabIndex = 21;
+            this.forceRoleLabel.Text = "Force Role (Not 100% Guarenteed to work)";
+            // 
+            // forceGhostBtn
+            // 
+            this.forceGhostBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.forceGhostBtn.Location = new System.Drawing.Point(388, 209);
+            this.forceGhostBtn.Name = "forceGhostBtn";
+            this.forceGhostBtn.Size = new System.Drawing.Size(168, 38);
+            this.forceGhostBtn.TabIndex = 20;
+            this.forceGhostBtn.Text = "Ghost";
+            this.forceGhostBtn.UseVisualStyleBackColor = false;
+            this.forceGhostBtn.Click += new System.EventHandler(this.forceGhostBtn_Click);
+            // 
+            // forceCrewmateBtn
+            // 
+            this.forceCrewmateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.forceCrewmateBtn.Location = new System.Drawing.Point(40, 209);
+            this.forceCrewmateBtn.Name = "forceCrewmateBtn";
+            this.forceCrewmateBtn.Size = new System.Drawing.Size(168, 38);
+            this.forceCrewmateBtn.TabIndex = 18;
+            this.forceCrewmateBtn.Text = "Crewmate";
+            this.forceCrewmateBtn.UseVisualStyleBackColor = false;
+            this.forceCrewmateBtn.Click += new System.EventHandler(this.forceCrewmateBtn_Click);
+            // 
+            // forceImpostorBtn
+            // 
+            this.forceImpostorBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
+            this.forceImpostorBtn.Location = new System.Drawing.Point(214, 209);
+            this.forceImpostorBtn.Name = "forceImpostorBtn";
+            this.forceImpostorBtn.Size = new System.Drawing.Size(168, 38);
+            this.forceImpostorBtn.TabIndex = 22;
+            this.forceImpostorBtn.Text = "Impostor";
+            this.forceImpostorBtn.UseVisualStyleBackColor = false;
+            this.forceImpostorBtn.Click += new System.EventHandler(this.forceImpostorBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(76)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(965, 244);
+            this.ClientSize = new System.Drawing.Size(968, 321);
+            this.Controls.Add(this.forceImpostorBtn);
+            this.Controls.Add(this.forceRoleLabel);
+            this.Controls.Add(this.forceGhostBtn);
+            this.Controls.Add(this.forceCrewmateBtn);
             this.Controls.Add(this.setThemeLabel);
             this.Controls.Add(this.setThemeTo3Button);
             this.Controls.Add(this.setThemeTo2Button);
@@ -247,6 +298,10 @@
         private System.Windows.Forms.Button setThemeTo2Button;
         private System.Windows.Forms.Button setThemeTo3Button;
         private System.Windows.Forms.Label setThemeLabel;
+        private System.Windows.Forms.Label forceRoleLabel;
+        private System.Windows.Forms.Button forceGhostBtn;
+        private System.Windows.Forms.Button forceCrewmateBtn;
+        private System.Windows.Forms.Button forceImpostorBtn;
     }
 }
 
